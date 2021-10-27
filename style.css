@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;
+}
+html {
+  font-size: 15px;
+}
+body {
+  background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+@media (min-width: 600px) {
+  body {
+    background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, bottom right;
+  }
+}
+body > div {
+  margin: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 1150px) {
+  body > div {
+    margin: 5rem 4rem 4rem;
+    max-width: 1110px;
+  }
+}
+header {
+  display: flex;
+  color: #502050;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 1150px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+header > div {
+  margin-bottom: 2rem;
+}
+@media (min-width: 1150px) {
+  header > div:first-of-type {
+    width: 29rem;
+    margin-right: 8rem;
+    text-align: left;
+  }
+}
+header > div:last-of-type {
+  margin-top: 1rem;
+}
+header h1 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 47px;
+    margin-bottom: 0.5rem;
+    line-height: 1em;
+  }
+}
+header p {
+  color: #937b92;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+header .stars-section {
+  margin-bottom: 0;
+}
+header .stars-section > div {
+  margin-bottom: 1rem;
+  background-color: #f7f2f7;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+@media (min-width: 1150px) {
+  header .stars-section > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    width: 390px;
+  }
+  header .stars-section > div:nth-of-type(2) {
+    margin-left: 3rem;
+    margin-right: 6rem;
+  }
+  header .stars-section > div:last-of-type {
+    margin-left: 6rem;
+    margin-right: 3rem;
+  }
+}
+header .stars-section .stars {
+  margin-bottom: 0.5rem;
+}
+header .stars-section .stars >img {
+  margin-right: 0.2rem;
+}
+@media (min-width: 600px) {
+  header .stars-section .stars {
+    margin-bottom: 0;
+  }
+}
+header .stars-section h2 {
+  font-size: 14px;
+}
+@media (min-width: 600px) {
+  header .stars-section h2 {
+    margin-left: 2rem;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+@media (min-width: 600px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1150px) {
+  main {
+    align-items: flex-start;
+  }
+}
+.review {
+  background-color: #502050;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-size: 13px;
+  margin: 0;
+}
+.review:not(:first-of-type) {
+  margin-top: 1rem;
+}
+@media (min-width: 600px) {
+  .review:not(:first-of-type) {
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1150px) {
+  .review:not(:first-of-type) {
+    margin-top: 1rem;
+  }
+}
+.review:last-of-type {
+  margin-top: 1rem;
+}
+@media (min-width: 600px) {
+  .review:last-of-type {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1150px) {
+  .review:last-of-type {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .review {
+    padding: 2.5rem 2rem;
+    width: 30%;
+  }
+}
+.review > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.review img {
+  width: 3rem;
+  border-radius: 2rem;
+}
+.review .personal {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  font-size: 13px;
+}
+.review .personal span:first-of-type {
+  font-weight: 500;
+}
+.review .personal span:last-of-type {
+  color: #ee68a4;
+  margin-top: 0.4rem;
+}
+.review p {
+  line-height: 1.8em;
+}
